@@ -24,7 +24,7 @@ class list_users:
 
 class version:
     def GET(self):
-        return 1
+        return 1.1
 
 
 class get_user:
