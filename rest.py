@@ -5,6 +5,10 @@ import xml.etree.ElementTree as ET
 tree = ET.parse('/src/user_data.xml')
 root = tree.getroot()
 
+
+import socket
+
+
 urls = (
     '/users', 'list_users',
     '/users/(.*)', 'get_user',
@@ -24,7 +28,7 @@ class list_users:
 
 class version:
     def GET(self):
-        return 3
+        return "4"+"@"+socket.gethostbyname(socket.gethostname())
 
 
 class get_user:
