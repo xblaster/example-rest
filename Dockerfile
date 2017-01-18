@@ -1,4 +1,4 @@
-from python:2
+from python:2-slim
 
 RUN pip install web.py
 ADD rest.py /src/
